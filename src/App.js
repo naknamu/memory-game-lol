@@ -3,16 +3,16 @@ import Card from "./components/card";
 import aatrox from "../src/images/aatrox.jpeg";
 import ahri from "../src/images/ahri.jpeg";
 import alistar from "../src/images/alistar.jpeg";
-import ashe from "../src/images/ashe.jpeg";
-import blitzcrank from "../src/images/blitzcrank.jpeg";
-import leblanc from "../src/images/leblanc.jpeg";
-import lucian from "../src/images/lucian.jpeg";
-import lulu from "../src/images/lulu.jpeg";
-import maokai from "../src/images/maokai.jpeg";
-import nautilaus from "../src/images/nautilaus.jpeg";
-import yasuo from "../src/images/yasuo.jpeg";
-import zed from "../src/images/zed.jpeg";
-import uniqid from "uniqid";
+// import ashe from "../src/images/ashe.jpeg";
+// import blitzcrank from "../src/images/blitzcrank.jpeg";
+// import leblanc from "../src/images/leblanc.jpeg";
+// import lucian from "../src/images/lucian.jpeg";
+// import lulu from "../src/images/lulu.jpeg";
+// import maokai from "../src/images/maokai.jpeg";
+// import nautilaus from "../src/images/nautilaus.jpeg";
+// import yasuo from "../src/images/yasuo.jpeg";
+// import zed from "../src/images/zed.jpeg";
+// import uniqid from "uniqid";
 
 const App = () => {
 
@@ -26,6 +26,7 @@ const App = () => {
   const [characters, setCharacters] = useState(champions);
   const [unique, setUnique] = useState(true);
   const [uniqArray, setUniqArray] = useState([]);
+  const [score, setScore] = useState(0);
 
   //shuffles the card one time when components mount on screen
   useEffect(() => {
@@ -36,12 +37,11 @@ const App = () => {
 
   //Shuffles the array when a card is clicked
   const handleClickCard = (items) => {
-
+    //shuffles the character array
     setCharacters(shuffleArray(characters));
-
-    console.log(items[1]);
-
+    //handle the click once logic
     handleClickOnce(items[1]);
+    
   }
 
   //A function that shuffles the input parameter array and returns the new shuffled array
@@ -67,12 +67,16 @@ const App = () => {
     newArray.push(key);
 
     setUniqArray(newArray);
+    setUnique(true);
+    setScore(score + 1);
 
-    uniqArray.filter(
+    let filteredArray =  uniqArray.filter(
       function(item) {
         if (item === key) {
-          setUnique(false);
           console.log('This card has been clicked already!');
+          setUnique(false);
+          setUniqArray([]);
+          setScore(0);
         }
       }
     )
@@ -82,7 +86,7 @@ const App = () => {
     <div className="App">
       <header>
         <div id="hero">Memory Game</div>
-        <div>Score: 0</div>
+        <div>Score: {score}</div>
         <div>High Score: 0</div>
       </header>
       <div className="card-container">
