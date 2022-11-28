@@ -2,7 +2,7 @@
 
 Memory card game created with react.
 
-[Live Demo](https://naknamu.github.io/memory-game-lol/)
+[Live Demo](https://naknamu.github.io/memory-game-lol/) 👀
 
 ## Getting Started
 
