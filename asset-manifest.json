@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-game-lol/static/css/main.ce316e88.css",
+    "main.js": "/memory-game-lol/static/js/main.89c67e88.js",
+    "static/media/lulu.jpeg": "/memory-game-lol/static/media/lulu.637a597e5c9c1a820ad7.jpeg",
+    "static/media/blitzcrank.jpeg": "/memory-game-lol/static/media/blitzcrank.a9c68ecc046ed5064405.jpeg",
+    "static/media/yasuo.jpeg": "/memory-game-lol/static/media/yasuo.2b680e8492080a9a9f70.jpeg",
+    "static/media/ashe.jpeg": "/memory-game-lol/static/media/ashe.fa47bc8bf4ebbe1a1946.jpeg",
+    "static/media/maokai.jpeg": "/memory-game-lol/static/media/maokai.f4249ed092f2b6a00253.jpeg",
+    "static/media/ahri.jpeg": "/memory-game-lol/static/media/ahri.ef1d5d1abb1b219e29ec.jpeg",
+    "static/media/nautilaus.jpeg": "/memory-game-lol/static/media/nautilaus.f4731dccc20597d56dd0.jpeg",
+    "static/media/zed.jpeg": "/memory-game-lol/static/media/zed.3c14d310953c8b7fd50e.jpeg",
+    "static/media/leblanc.jpeg": "/memory-game-lol/static/media/leblanc.2ea60af57d9cc1ce779e.jpeg",
+    "static/media/alistar.jpeg": "/memory-game-lol/static/media/alistar.fad87a1c77a044eefc53.jpeg",
+    "static/media/lucian.jpeg": "/memory-game-lol/static/media/lucian.1716885d899612032c01.jpeg",
+    "static/media/aatrox.jpeg": "/memory-game-lol/static/media/aatrox.2bf7e1b144434a94b734.jpeg",
+    "index.html": "/memory-game-lol/index.html",
+    "main.ce316e88.css.map": "/memory-game-lol/static/css/main.ce316e88.css.map",
+    "main.89c67e88.js.map": "/memory-game-lol/static/js/main.89c67e88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce316e88.css",
+    "static/js/main.89c67e88.js"
+  ]
+}
